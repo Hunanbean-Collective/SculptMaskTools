@@ -1,14 +1,14 @@
 bl_info = {
-	"name": "Mask Tools",
+	"name": "Sculpt Mask Tools",
 	"author": "Stanislav Blinov,Yigit Savtur,Bookyakuno (2.8Update), Hunanbean 2023 minor additions and text edits",
 	"version": (0, 39,0),
 	"blender": (2, 80,0),
-	"location": "3d View > Properties shelf (N) > Sculpt",
+	"location": "3d View > Properties shelf (N) > Mask",
 	"description": "Tools for Converting Sculpt Masks to Vertex groups",
 	"warning": "",
 	"wiki_url": "",
 	"tracker_url": "",
-	"category": "Sculpt"}
+	"category": "Mask"}
 
 
 
@@ -101,7 +101,7 @@ class MASKTOOLS_AddonPreferences(bpy.types.AddonPreferences):
 
 class MaskToolsPanel(Panel):
 	"""Creates a Mask Tool Box in the Viewport Tool Panel"""
-	bl_category = "Sculpt"
+	bl_category = "Mask"
 	bl_idname = "MESH_OT_masktools"
 	bl_space_type = 'VIEW_3D'
 	bl_region_type = 'UI'
